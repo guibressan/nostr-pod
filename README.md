@@ -17,7 +17,7 @@
 ./control.sh mk-systemd
 ```
 
-* removed systemd unit
+* remove systemd unit
 ```bash
 ./control.sh rm-systemd
 ```
