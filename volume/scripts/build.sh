@@ -14,12 +14,11 @@ build() {
 	git clone https://github.com/scsibug/nostr-rs-relay
 	cd nostr-rs-relay
 	git checkout ${COMMIT_V}
-	apt install -y 
 	cargo build --release
 	mkdir -p /usr/src/app
 	mv target/release/nostr-rs-relay /usr/src/app/nostr-rs-relay
 	cd /
-	rm -rf /root/.cargo
+	rm -rf ~/.cargo
 	rm -rf /tmp/build
 }
 ####################
